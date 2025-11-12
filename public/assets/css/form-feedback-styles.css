@@ -1,0 +1,82 @@
+/* =============================================================================
+   STYLES ADDITIONNELS POUR LE FORMULAIRE
+   À ajouter à votre fichier styles.css existant
+   ============================================================================= */
+
+/* Messages de feedback du formulaire */
+.form-feedback {
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  animation: slideDown 0.3s ease;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Message de succès */
+.form-feedback--success {
+  background-color: rgba(201, 104, 57, 0.15);
+  border: 2px solid var(--orange-accent);
+  color: #224f3c;
+}
+
+/* Message d'erreur */
+.form-feedback--error {
+  background-color: rgba(201, 104, 57, 0.15);
+  border: 2px solid var(--burnt-orange);
+  color: var(--warm-brown);
+}
+
+/* État disabled du bouton */
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Focus visible pour accessibilité (si pas déjà présent) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--orange-accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Navigation au clavier uniquement */
+body:not(.user-is-tabbing) a:focus,
+body:not(.user-is-tabbing) button:focus,
+body:not(.user-is-tabbing) input:focus,
+body:not(.user-is-tabbing) select:focus,
+body:not(.user-is-tabbing) textarea:focus {
+  outline: none;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: var(--forest-green);
+  color: var(--cream);
+  padding: 8px 16px;
+  text-decoration: none;
+  z-index: 9999;
+  border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+  top: 0;
+}

@@ -1,0 +1,84 @@
+# robots.txt - L'Agence Sauvage
+# Dernière mise à jour : Novembre 2025
+
+# ============================================
+# RÈGLES POUR TOUS LES ROBOTS
+# ============================================
+
+User-agent: *
+Allow: /
+# Éviter l’indexation de pages avec paramètres de tracking
+Disallow: /*?*utm_
+Disallow: /*?*fbclid=
+# Laissez les assets nécessaires au rendu
+Allow: /assets/css/
+Allow: /assets/js/
+
+
+# ============================================
+# SITEMAPS
+# ============================================
+
+# Sitemap principal (pages statiques)
+Sitemap: https://www.lagencesauvage.com/sitemap.xml
+
+# Sitemap blog (à activer quand le blog sera lancé)
+# Sitemap: https://www.lagencesauvage.com/sitemap-blog.xml
+
+# ============================================
+# RÈGLES SPÉCIFIQUES PAR ROBOT
+# ============================================
+
+# GoogleBot (Google)
+User-agent: Googlebot
+Allow: /
+
+# BingBot (Microsoft Bing)
+User-agent: Bingbot
+Allow: /
+
+# =========================
+# BOTS IA / LLM (explicite)
+# =========================
+# OpenAI
+User-agent: GPTBot
+Allow: /
+User-agent: OAI-SearchBot
+Allow: /
+User-agent: ChatGPT-User
+Allow: /
+
+# Google (contrôle d’usage IA)
+User-agent: Google-Extended
+Allow: /
+
+# Microsoft Bing
+User-agent: Bingbot
+Allow: /
+# Optionnel: petit délai pour Bing (Google ignore cette directive)
+Crawl-delay: 2
+
+# Apple
+User-agent: Applebot
+Allow: /
+User-agent: Applebot-Extended
+Allow: /
+
+# Common Crawl (source de jeux de données)
+User-agent: CCBot
+Allow: /
+
+# Perplexity
+User-agent: PerplexityBot
+Allow: /
+
+# Anthropic (Claude)
+User-agent: anthropic-ai
+Allow: /
+# ============================================
+# NOTES
+# ============================================
+# - Toutes les pages HTML sont indexables
+# - Les images sont indexables (bon pour Google Images)
+# - Les favicons et manifests sont bloqués
+# - Crawl-delay à 0 = exploration rapide (site léger)

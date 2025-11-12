@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog de L'Agence Sauvage - Articles sur l'IA, l'automation et la transformation digitale des TPE/PME">
+    <title>Blog - L'Agence Sauvage</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="assets/blog.css">
+    
+    <!-- SEO -->
+    <meta property="og:title" content="Blog - L'Agence Sauvage">
+    <meta property="og:description" content="Articles sur l'IA, l'automation et la transformation digitale des TPE/PME">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.lagencesauvage.com/blog">
+    
+    <!-- Plausible Analytics -->
+    <script defer data-domain="lagencesauvage.com" src="https://plausible.io/js/script.js"></script>
+</head>
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Aller au contenu principal</a>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav" aria-label="Navigation principale">
+                <a href="/" class="nav__logo" aria-label="Retour à l'accueil">
+                    <svg width="60" height="60" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <rect width="200" height="200" fill="#f2ede1" rx="20"/>
+                        <text x="50%" y="35%" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#224f3c">L'AGENCE</text>
+                        <text x="50%" y="65%" text-anchor="middle" font-family="Arial, sans-serif" font-size="28" font-weight="700" fill="#c96839">SAUVAGE</text>
+                    </svg>
+                </a>
+
+                <button class="nav__toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav__menu">
+                    <li><a href="/services.html" class="nav__link">Services</a></li>
+                    <li><a href="/realisations.html" class="nav__link">Réalisations</a></li>
+                    <li><a href="/blog" class="nav__link nav__link--active">Blog</a></li>
+                    <li><a href="/ressources.html" class="nav__link">Ressources</a></li>
+                    <li><a href="/about.html" class="nav__link">À propos</a></li>
+                    <li><a href="/#contact" class="btn btn-primary btn-small">Audit gratuit</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section class="blog-hero">
+            <div class="container">
+                <h1 class="blog-hero__title">Blog</h1>
+                <p class="blog-hero__subtitle">
+                    Découvrez nos articles sur l'IA, l'automation et la transformation digitale des TPE/PME
+                </p>
+            </div>
+        </section>
+
+        <!-- Search & Filters -->
+        <section class="blog-filters">
+            <div class="container">
+                <div class="blog-filters__wrapper">
+                    <!-- Search Bar -->
+                    <div class="search-bar">
+                        <input 
+                            type="text" 
+                            id="searchInput" 
+                            class="search-bar__input" 
+                            placeholder="Rechercher un article..."
+                            aria-label="Rechercher un article"
+                        >
+                        <svg class="search-bar__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="m21 21-4.35-4.35"></path>
+                        </svg>
+                    </div>
+
+                    <!-- Category Filters -->
+                    <div class="category-filters">
+                        <button class="category-filter active" data-category="all">Tous</button>
+                        <button class="category-filter" data-category="IA & Automation">IA & Automation</button>
+                        <button class="category-filter" data-category="Marketing">Marketing</button>
+                        <button class="category-filter" data-category="Stratégie">Stratégie</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Articles Grid -->
+        <section class="blog-articles">
+            <div class="container">
+                <div id="articlesGrid" class="articles-grid">
+                    <!-- Article 1 : L'Art du Prompt -->
+                    <article class="article-card" data-category="IA & Automation" data-tags="Prompt Engineering,GPT-4,Entrepreneurs">
+                        <div class="article-card__image">
+                            <div class="article-card__image-placeholder">
+                                <svg width="60" height="60" viewBox="0 0 24 24" fill="none" stroke="#7dc242" stroke-width="2">
+                                    <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+                                    <path d="M8 10h.01M12 10h.01M16 10h.01"></path>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="article-card__content">
+                            <div class="article-card__meta">
+                                <span class="article-card__category">IA & Automation</span>
+                                <span class="article-card__date">12 novembre 2025</span>
+                            </div>
+                            <h2 class="article-card__title">
+                                <a href="/blog/art-du-prompt.html">L'Art du Prompt : Le Guide Complet pour les Entrepreneurs</a>
+                            </h2>
+                            <p class="article-card__description">
+                                Découvrez comment maîtriser l'art du prompt pour exploiter tout le potentiel de l'IA dans votre business. Techniques avancées, exemples concrets et erreurs à éviter.
+                            </p>
+                            <div class="article-card__tags">
+                                <span class="tag">Prompt Engineering</span>
+                                <span class="tag">GPT-4</span>
+                                <span class="tag">Entrepreneurs</span>
+                            </div>
+                            <a href="/blog/art-du-prompt.html" class="article-card__link">
+                                Lire l'article
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                    <path d="M5 12h14M12 5l7 7-7 7"/>
+                                </svg>
+                            </a>
+                        </div>
+                    </article>
+
+                    <!-- Placeholder pour futurs articles -->
+                    <div class="article-card article-card--coming-soon">
+                        <div class="article-card__content">
+                            <h3 style="color: var(--forest-green); margin-bottom: 1rem;">Plus d'articles à venir...</h3>
+                            <p style="color: var(--stone-gray);">
+                                Nous publions régulièrement des articles sur l'IA, l'automation et la transformation digitale.
+                            </p>
+                            <a href="/#contact" class="btn btn-primary" style="margin-top: 1.5rem;">
+                                Recevoir les nouveaux articles
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- No Results Message -->
+                <div id="noResults" class="no-results" style="display: none;">
+                    <p>Aucun article ne correspond à votre recherche.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="cta-box">
+                    <h2 style="font-size: 2rem; margin-bottom: 1rem; color: var(--white);">
+                        Prêt à transformer votre TPE/PME avec l'IA ?
+                    </h2>
+                    <p style="font-size: 1.1rem; margin-bottom: 2rem; color: var(--cream); opacity: 0.9;">
+                        Obtenez un audit gratuit de 30 minutes pour identifier vos opportunités d'automatisation
+                    </p>
+                    <a href="/#contact" class="btn btn-secondary">
+                        Obtenir mon audit gratuit
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__content">
+                <div class="footer__column">
+                    <h3 class="footer__title">L'Agence Sauvage</h3>
+                    <p class="footer__text">
+                        L'IA pour votre TPE/PME, au prix d'un stagiaire
+                    </p>
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="footer__title">Navigation</h3>
+                    <ul class="footer__links">
+                        <li><a href="/services.html">Services</a></li>
+                        <li><a href="/realisations.html">Réalisations</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/ressources.html">Ressources</a></li>
+                        <li><a href="/about.html">À propos</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="footer__title">Contact</h3>
+                    <ul class="footer__links">
+                        <li><a href="mailto:contact@lagencesauvage.com">contact@lagencesauvage.com</a></li>
+                        <li><a href="tel:+33686502030">+33 6 86 50 20 30</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="footer__title">Légal</h3>
+                    <ul class="footer__links">
+                        <li><a href="/mentions-legales.html">Mentions légales</a></li>
+                        <li><a href="/privacy.html">Politique de confidentialité</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <p>&copy; 2025 L'Agence Sauvage. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../assets/js/main.js"></script>
+    <script src="assets/blog.js"></script>
+</body>
+</html>

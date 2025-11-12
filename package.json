@@ -1,0 +1,21 @@
+{
+  "name": "lagencesauvage-site",
+  "version": "1.0.0",
+  "description": "Site web L'Agence Sauvage avec intégration Notion",
+  "type": "module",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "echo 'Build complete'",
+    "deploy": "vercel --prod"
+  },
+  "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "@sendgrid/mail": "^8.1.0"
+  },
+  "devDependencies": {
+    "vercel": "^33.0.0"
+  },
+  "engines": {
+    "node": ">=18.x"
+  }
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+        http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<!-- 
+=============================================================================
+SITEMAP BLOG - L'AGENCE SAUVAGE
+=============================================================================
+Dernière mise à jour : Novembre 2025
+Site : https://www.lagencesauvage.com/blog/
+
+⚠️ FICHIER PRÉPARATOIRE - À ACTIVER PLUS TARD
+
+Ce fichier est prêt pour vos futurs articles de blog (1-2 par semaine).
+
+COMMENT L'UTILISER :
+1. Créez votre page blog principale : /blog/index.html
+2. Ajoutez vos articles dans : /blog/mon-article.html
+3. Décommentez les exemples ci-dessous
+4. Mettez à jour les URLs et dates
+5. Décommentez la ligne Sitemap dans robots.txt
+
+PRIORITÉS BLOG :
+- Index blog : 0.8 (page importante)
+- Articles récents : 0.7
+- Articles anciens : 0.5 (automatique après 6 mois)
+
+CHANGEFREQ :
+- Index blog : weekly (liste des articles)
+- Articles individuels : monthly (contenu stable)
+=============================================================================
+-->
+
+<!-- PAGE INDEX DU BLOG -->
+<!--
+<url>
+  <loc>https://www.lagencesauvage.com/blog/</loc>
+  <lastmod>2025-11-01</lastmod>
+  <changefreq>weekly</changefreq>
+  <priority>0.8</priority>
+</url>
+-->
+
+<!-- EXEMPLES D'ARTICLES - À ADAPTER -->
+<!--
+<url>
+  <loc>https://www.lagencesauvage.com/blog/automatisation-ia-tpe-pme.html</loc>
+  <lastmod>2025-11-01</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://www.lagencesauvage.com/blog/chatbot-linkedin-prospection.html</loc>
+  <lastmod>2025-10-25</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+<url>
+  <loc>https://www.lagencesauvage.com/blog/ia-accessible-500-euros.html</loc>
+  <lastmod>2025-10-18</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+-->
+
+<!-- 
+=============================================================================
+TEMPLATE POUR NOUVEAUX ARTICLES
+=============================================================================
+
+Copiez-collez ce template pour chaque nouvel article :
+
+<url>
+  <loc>https://www.lagencesauvage.com/blog/TITRE-DE-VOTRE-ARTICLE.html</loc>
+  <lastmod>YYYY-MM-DD</lastmod>
+  <changefreq>monthly</changefreq>
+  <priority>0.7</priority>
+</url>
+
+Remplacez :
+- TITRE-DE-VOTRE-ARTICLE : URL de l'article (minuscules, tirets)
+- YYYY-MM-DD : Date de publication (ex: 2025-11-15)
+
+=============================================================================
+-->
+
+</urlset>
